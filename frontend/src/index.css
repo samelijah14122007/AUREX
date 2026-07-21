@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, sans-serif;
+  background: #f5f7fa;
+  color: #0b1220;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+button {
+  cursor: pointer;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #94a3b8;
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+.aurex-panel { border: 1px solid #e4e9f1; border-radius: 8px; background: #fff; box-shadow: 0 12px 30px rgba(15, 23, 42, .05); transition: border-color .2s, box-shadow .2s; }
+.aurex-panel:hover { border-color: #bfdbfe; box-shadow: 0 15px 34px rgba(15, 23, 42, .08); }
+.aurex-eyebrow { color: #1d4ed8; font-size: .72rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; }
+.aurex-button { display: inline-flex; align-items: center; gap: .55rem; border-radius: .5rem; background: linear-gradient(135deg,#1d4ed8,#06b6d4); padding: .7rem 1.05rem; color: #fff; font-size: .875rem; font-weight: 700; box-shadow: 0 8px 18px rgba(29,78,216,.18); transition: transform .15s, box-shadow .15s; }.aurex-button:hover{transform:translateY(-1px);box-shadow:0 12px 24px rgba(29,78,216,.25)}
+.aurex-button:disabled { cursor: not-allowed; opacity: .5; }
+
+/* The authenticated workspace uses a light operational surface. */
+main h1.text-white, main h2.text-white, main p.text-white { color: #0f172a; }
+main p.text-slate-400 { color: #475569; }
+main .text-slate-300 { color: #334155; }

@@ -1,0 +1,37 @@
+### Register User
+POST http://localhost:8080/api/auth/register
+Content-Type: application/json
+
+{
+  "name": "Sam Elijah",
+  "email": "sam@gmail.com",
+  "password": "123456"
+}
+
+###
+
+### Login User
+POST http://localhost:8080/api/auth/login
+Content-Type: application/json
+
+{
+  "email": "sam@gmail.com",
+  "password": "123456"
+}
+
+###
+
+### Protected API
+GET http://localhost:8080/api/hello
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzYW1AZ21haWwuY29tIiwiaWF0IjoxNzg0MjExNDI5LCJleHAiOjE3ODQyOTc4Mjl9.DWUWnh4aDODXi8a6r27FdBJuyxPbZiN-jV6lpzEJ3tc
+
+###
+
+### Gemini AI Chat
+POST http://localhost:8080/api/ai/chat
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzYW1AZ21haWwuY29tIiwiaWF0IjoxNzg0MjExNDI5LCJleHAiOjE3ODQyOTc4Mjl9.DWUWnh4aDODXi8a6r27FdBJuyxPbZiN-jV6lpzEJ3tc
+Content-Type: application/json
+
+{
+  "message": "What is Artificial Intelligence?"
+}
