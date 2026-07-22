@@ -1,0 +1,31 @@
+# Build and VCS output
+target/
+.git/
+
+# IDE/editor settings
+.idea/
+.vscode/
+*.iml
+
+# Dependency and frontend build output
+node_modules/
+dist/
+build/
+
+# Local runtime data and logs
+uploads/
+logs/
+*.log
+
+# Local environment files and secrets
+.env
+.env.*
+!.env.example
+
+# OS and temporary files
+.DS_Store
+Thumbs.db
+*.tmp
+*.temp
+*.swp
+*~
